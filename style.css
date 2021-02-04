@@ -520,9 +520,69 @@ select {
     color: #fff;
 }
 
+.dtp_modal-win {
+    background-color: #dfdfdf77;
+}
+
+.dtp_modal-content-no-time {
+    top: 100%;
+    left: 0;
+}
+
+.dtp_modal-calendar-cell {
+    color: #000;
+}
+
+.dtp_modal-grey {
+    color: #7d7d7d !important;
+}
+
+.dtp_modal-cell-selected {
+    color: #fff;
+}
+
+.dtp_main {
+    color: #7d7d7d;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 15px;
+    border: 3px solid #a0abc7;
+}
+
+.dtp_modal-title {
+    display: none !important;
+}
+
 
 /* footer */
 
 footer p {
     font-size: 17px;
+}
+
+@media (max-width:400px) {
+    .dtp_modal-content-no-time {
+        left: 0% !important;
+    }
+    .dtp_modal-cell-date,
+    .dtp_modal-calendar {
+        width: auto;
+    }
+    .dtp_modal-calendar-cell {
+        width: 35px;
+        font-size: 11px;
+    }
+    .dtp_modal-cell-date {
+        float: left;
+        margin: 0 10px;
+    }
+    .dtp_modal-months {
+        margin-left: 10px;
+    }
+    .dtp_modal-months {
+        font-size: 16px;
+    }
+    .ico-size-month {
+        font-size: 15px !important;
+    }
 }
